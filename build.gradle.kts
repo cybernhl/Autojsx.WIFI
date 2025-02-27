@@ -1,16 +1,17 @@
 plugins {
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "2.0.0"
-    id("org.jetbrains.intellij") version "1.17.4" //"1.13.3"
+    id("org.jetbrains.kotlin.jvm")
+    id("org.jetbrains.intellij")
+}
+
+repositories {
+    mavenCentral()
+    google()
 }
 
 group = "github.zimo"
 //SNAPSHOT
 version = "1.1.6"
-
-repositories {
-    mavenCentral()
-}
 
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
